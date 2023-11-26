@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #535353;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #697796;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.shop_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+nav .fa-bars,
+nav .fa-xmark {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav-links ul li {
+    display: block;
+  }
+
+  nav .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav .fa-xmark {
+    margin: 0;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #ffedec;
+    width: 150px;
+    transform: translateX(150px);
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 0.3s;
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-1 {
+  width: 30%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0 50px 50px 0;
+}
+
+.image-2 {
+  width: 70%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50px 0 0 50px;
+}
+
+.video-container {
+  padding: 20px 50px;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+}
+
+.video-title {
+  /* margin-bottom: 10px; */
+  font-size: 2rem;
+  text-align: center;
+}
+
+.music-video {
+  /* padding: 0; */
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+}
+
+.video-caption {
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #eeeeee;
+  border-radius: 0 0 50px 50px;
+  border-color: #757575;
+}
+
+.card-container {
+  position: relative;
+  height: 700px;
+  padding: 50px;
+}
+
+.card-1 {
+  position: absolute;
+  right: 50%;
+  transform: translate(50px, 50px);
+  background: url("images/lady.png") no-repeat;
+  width: 500px;
+  height: 300px;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #707070;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.card-2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50px, -50px);
+  top: 50%;
+  width: 500px;
+  height: 300px;
+  background-color: #ebf9f7;
+  border: 1px solid #707070;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-details {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 25px;
+  left: 125px;
+}
+
+.song-lyrics {
+  position: absolute;
+  font-size: 2rem;
+  top: 135px;
+  left: 125px;
+}
+
+.song-artist {
+  color: #f56b6b;
+}
+
+.before-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  background-color: #697796;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  margin: 0 20px;
+}
+.video-title {
+  color: #f5f5f5;
+}
+
+.Cbutton {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  border-radius: 25px;
+}
+.Cbutton:hover {
+  border: 1px solid #000000;
+  background: transparent;
+  transition: 1s;
+}
+
+.poster-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.poster-image {
+  margin: 0 auto;
+  max-width: 50%;
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50 50px 50px 50;
+}
+
+.poster-details {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+}
+
+.button-container {
+  margin: 20px;
+}
+
+.book-button {
+  text-decoration: none;
+  color: #212121;
+  border: 1px solid #707070;
+  padding: 20px 40px;
+  background: transparent;
+  border-radius: 25px;
+}
+
+.book-button:hover {
+  border: 1px solid #000000;
+  background: #bdbdbd;
+  transition: 1s;
+}
+
+.tours-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tours-title {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+  /* background: blue; */
+}
+
+.tours-details {
+  width: 60%;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  /* background: red; */
+}
+
+.live-container {
+  display: flex;
+}
+
+.live-title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+  /* background: blue; */
+}
+
+.live-details {
+  width: 60%;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* background: red; */
+}
+
+.image-3 {
+  max-width: 100%;
+  width: 400px;
+  padding: 20px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.image-4 {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
