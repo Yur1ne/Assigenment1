@@ -3,7 +3,6 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 .header {
@@ -75,9 +74,11 @@ nav .fa-xmark {
   display: none;
 }
 
+
 @media (max-width: 700px) {
   .nav-links ul li {
     display: block;
+    margin: 40px;
   }
 
   nav .fa-bars {
@@ -86,7 +87,7 @@ nav .fa-xmark {
   }
 
   nav .fa-xmark {
-    margin: 0;
+    margin: 20px;
     padding: 10px;
     display: block;
     cursor: pointer;
@@ -95,7 +96,8 @@ nav .fa-xmark {
   .nav-links {
     position: absolute;
     background: #ffffff;
-    width: 150px;
+    width: 180px;
+    height: 500px;
     transform: translateX(150px);
     top: 0;
     right: 0;
