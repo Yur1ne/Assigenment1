@@ -143,15 +143,15 @@ footer {
 }
 
 .video-title {
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
   font-size: 2rem;
   text-align: center;
 }
 
 .music-video {
-  /* padding: 0; */
   width: 100%;
   border-radius: 50px 50px 0 0;
+  border-color: #000000;
 }
 
 .video-caption {
