@@ -136,10 +136,11 @@ footer {
 }
 
 .video-container {
-  padding: 20px 50px;
+  padding: 20px 60px;
   width: 100%;
   background-color: #e0e0e0;
-  border-radius: 50px;
+  border-radius: 40px;
+  margin: 10px;
 }
 
 .video-title {
@@ -150,7 +151,7 @@ footer {
 
 .music-video {
   width: 100%;
-  border-radius: 50px 50px 0 0;
+  border-radius: 40px 40px 0 0;
   border-color: #000000;
 }
 
@@ -159,7 +160,7 @@ footer {
   padding: 8px;
   font-size: 20px;
   background-color: #eeeeee;
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 40px 40px;
   border-color: #757575;
 }
 
